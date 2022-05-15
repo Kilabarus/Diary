@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryService", "DiaryService\DiaryService.csproj", "{848D02EF-6CCF-455B-B74C-C28B34B9459F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryClient", "DiaryClient\DiaryClient.csproj", "{1EE716C0-48A6-49C9-A498-70CA2041D0FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{848D02EF-6CCF-455B-B74C-C28B34B9459F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848D02EF-6CCF-455B-B74C-C28B34B9459F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848D02EF-6CCF-455B-B74C-C28B34B9459F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848D02EF-6CCF-455B-B74C-C28B34B9459F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE716C0-48A6-49C9-A498-70CA2041D0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE716C0-48A6-49C9-A498-70CA2041D0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE716C0-48A6-49C9-A498-70CA2041D0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE716C0-48A6-49C9-A498-70CA2041D0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1C2024E-BD3C-4C68-84BD-7BCF0EFCE5F3}
+	EndGlobalSection
+EndGlobal
