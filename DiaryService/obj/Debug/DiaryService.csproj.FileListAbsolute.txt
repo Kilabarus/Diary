@@ -87,7 +87,6 @@ C:\.NET_Learning\Pet Projects\Diary\DiaryService\bin\System.Web.WebPages.Deploym
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\bin\System.Web.WebPages.Razor.xml
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\bin\Antlr3.Runtime.pdb
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.AssemblyReference.cache
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.CoreCompileInputs.cache
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.CopyComplete
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.dll

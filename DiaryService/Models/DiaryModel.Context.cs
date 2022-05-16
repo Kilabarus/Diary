@@ -27,7 +27,7 @@ namespace DiaryService.Models
     
         public virtual DbSet<Task> Tasks { get; set; }
         public virtual DbSet<TaskFrequency> TaskFrequencies { get; set; }
-        public virtual DbSet<TaskStatu> TaskStatus { get; set; }
+        public virtual DbSet<TaskStatus> TaskStatus { get; set; }
         public virtual DbSet<TaskType> TaskTypes { get; set; }
     }
 }
