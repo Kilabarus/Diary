@@ -24,7 +24,7 @@ namespace DiaryService.Models
         public Nullable<long> Status_Id { get; set; }
     
         public virtual TaskType TaskType { get; set; }
-        public virtual TaskStatu TaskStatu { get; set; }
+        public virtual TaskStatus TaskStatus { get; set; }
         public virtual TaskFrequency TaskFrequency { get; set; }
     }
 }

@@ -112,7 +112,7 @@
           <Property Name="Frequency_Id" Type="Int64" />
           <Property Name="Status_Id" Type="Int64" />
           <NavigationProperty Name="TaskType" Relationship="Self.FK_Task_0_0" FromRole="Task" ToRole="TaskType" />
-          <NavigationProperty Name="TaskStatu" Relationship="Self.FK_Task_1_0" FromRole="Task" ToRole="TaskStatus" />
+          <NavigationProperty Name="TaskStatus" Relationship="Self.FK_Task_1_0" FromRole="Task" ToRole="TaskStatus" />
           <NavigationProperty Name="TaskFrequency" Relationship="Self.FK_Task_2_0" FromRole="Task" ToRole="TaskFrequency" />
         </EntityType>
         <EntityType Name="TaskFrequency">
@@ -123,7 +123,7 @@
           <Property Name="Frequency" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Tasks" Relationship="Self.FK_Task_2_0" FromRole="TaskFrequency" ToRole="Task" />
         </EntityType>
-        <EntityType Name="TaskStatu">
+        <EntityType Name="TaskStatus">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -153,7 +153,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Task_1_0">
-          <End Role="TaskStatus" Type="Self.TaskStatu" Multiplicity="0..1" />
+          <End Role="TaskStatus" Type="DiaryModel.TaskStatus" Multiplicity="0..1" />
           <End Role="Task" Type="Self.Task" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="TaskStatus">
@@ -179,14 +179,14 @@
         <EntityContainer Name="DiaryConnection" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Tasks" EntityType="Self.Task" />
           <EntitySet Name="TaskFrequencies" EntityType="Self.TaskFrequency" />
-          <EntitySet Name="TaskStatus" EntityType="Self.TaskStatu" />
+          <EntitySet Name="TaskStatus1" EntityType="DiaryModel.TaskStatus" />
           <EntitySet Name="TaskTypes" EntityType="Self.TaskType" />
           <AssociationSet Name="FK_Task_0_0" Association="Self.FK_Task_0_0">
             <End Role="TaskType" EntitySet="TaskTypes" />
             <End Role="Task" EntitySet="Tasks" />
           </AssociationSet>
           <AssociationSet Name="FK_Task_1_0" Association="Self.FK_Task_1_0">
-            <End Role="TaskStatus" EntitySet="TaskStatus" />
+            <End Role="TaskStatus" EntitySet="TaskStatus1" />
             <End Role="Task" EntitySet="Tasks" />
           </AssociationSet>
           <AssociationSet Name="FK_Task_2_0" Association="Self.FK_Task_2_0">
@@ -222,8 +222,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="TaskStatus">
-            <EntityTypeMapping TypeName="DiaryModel.TaskStatu">
+          <EntitySetMapping Name="TaskStatus1">
+            <EntityTypeMapping TypeName="DiaryModel.TaskStatus">
               <MappingFragment StoreEntitySet="TaskStatus">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
