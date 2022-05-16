@@ -91,3 +91,4 @@ C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.C
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.CopyComplete
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.dll
 C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.pdb
+C:\.NET_Learning\Pet Projects\Diary\DiaryService\obj\Debug\DiaryService.csproj.AssemblyReference.cache
