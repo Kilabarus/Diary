@@ -6,7 +6,11 @@ using System.Text;
 
 namespace DiaryClient.Model
 {
+<<<<<<< HEAD
     public class Task : INotifyPropertyChanged
+=======
+    public class Task
+>>>>>>> feature_WebAPI
     {
         public long Id { get; set; }
         public string Title { get; set; }
